@@ -1,0 +1,59 @@
+(executable
+    (name OniUnitTestRunner)
+    (public_name OniUnitTestRunner)
+    (modules OniUnitTestRunner)
+    (package OniUnitTestRunner)
+    (libraries
+        yojson
+        Oni_Core_Test
+        Oni_Extensions_Test
+        Oni_Input_Test
+        Oni_Model_Test
+        Oni_Syntax_Test
+            ))
+
+(executable
+    (name OniUnitTestRunnerCore)
+    (public_name OniUnitTestRunnerCore)
+    (modules OniUnitTestRunnerCore)
+    (package OniUnitTestRunner)
+    (libraries
+        yojson
+        Oni_Core_Test
+            ))
+
+(executable
+    (name OniUnitTestRunnerInput)
+    (public_name OniUnitTestRunnerInput)
+    (modules OniUnitTestRunnerInput)
+    (package OniUnitTestRunner)
+    (libraries
+        yojson
+        Oni_Core_Test
+        Oni_Input_Test
+            ))
+
+(executable
+    (name OniUnitTestRunnerModel)
+    (public_name OniUnitTestRunnerModel)
+    (modules OniUnitTestRunnerModel)
+    (package OniUnitTestRunner)
+    (libraries
+        yojson
+        Oni_Core_Test
+        Oni_Model_Test
+            ))
+
+(executable
+    (name OniUnitTestRunnerCI)
+    (public_name OniUnitTestRunnerCI)
+    (modules OniUnitTestRunnerCI)
+    (package OniUnitTestRunner)
+    (libraries
+        yojson
+        Oni_Core_Test
+        Oni_Extensions_Test
+        Oni_Input_Test
+        Oni_Syntax_Test
+        Oni_Model_Test
+            ))

@@ -27,7 +27,7 @@ Some more mixed features:
 - __Integrated Browser__ - Never was too useful in user's flow.
 
 And, there are also areas that Oni fell short, and didn't meet the goals we set out:
-- __Performance__ - as can be attested to by viewing any hacker-news-Oni-thread, the choice of Electron as a technology stack certainly alienated some users. There are still lots of areas we can improve on perf - but we need to decide if its worth investing in our current technology, and fixing the issues, or exploring new technology with the possibility of perfomance improvements.
+- __Performance__ - as can be attested to by viewing any hacker-news-Oni-thread, the choice of Electron as a technology stack certainly alienated some users. There are still lots of areas we can improve on perf - but we need to decide if its worth investing in our current technology, and fixing the issues, or exploring new technology with the possibility of performance improvements.
 - __Language support__ - Although language support worked well in some cases, there was awkwardness with the way the completion model integrated with Neovim. For example, if there were both language server providers and a popupmenu, this could lead to some awkward and problematic UX. In addition, the completion model never worked perfectly with macros or the repeat key, which was a pain point.
 - __Enabling power users__ - Power vim users had trouble integrating functionality from the Vim config to Oni's config, and vice versa. For example, calling Oni commands via Ex mode was challenging in some cases, or not possible in others.
 - __Sustainability__ - Oni is not a financially sustainable project. This is partly a consequence of being so niche, but maybe there are improvements we can make.
@@ -143,6 +143,6 @@ The above document is optimistic and paints a rosy picture for this new architec
 
 ## Open Questions
 
-- What syntax highlighting strategy would be best? Textmate Highlighting, Treesitter? Could we contribute one of these back to core Neovim, or would it be better for performance to run out-of-band? (tree-sitter integration is ongoing in neovim: https://github.com/neovim/neovim/pull/9219)
+- What syntax highlighting strategy would be best? Textmate Highlighting, Tree-sitter? Could we contribute one of these back to core Neovim, or would it be better for performance to run out-of-band? (Tree-sitter integration is ongoing in neovim: https://github.com/neovim/neovim/pull/9219)
 - Could there be a story for native-code plugins? This would be great for things like buffer layers. OCaml has a feature called `dynlink` which is for dynamically loading libraries - this could be leveraged for a native-code plugin story (would be ideal for performance-critical extensions like buffer layers)
 - How will features like Markdown Preview be implemented in this new architecture?

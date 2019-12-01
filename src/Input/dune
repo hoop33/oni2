@@ -1,0 +1,20 @@
+(ocamllex
+  (modules When_lexer))
+
+(menhir
+  (modules When_parser))
+
+(library
+    (name Oni_Input)
+    (public_name Oni2.input)
+    (libraries 
+        str
+        bigarray
+        zed_oni
+        lwt
+        lwt.unix
+        Oni2.core
+        Rench
+        Revery
+    )
+    (preprocess (pps ppx_deriving_yojson ppx_deriving.show)))

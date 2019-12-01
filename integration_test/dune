@@ -7,8 +7,13 @@
            ClipboardYankTest
            CopyActiveFilepathToClipboardTest
            EchoNotificationTest
+           EditorFontFromPathTest
+           EditorFontValidTest
+           ExtHostBufferUpdatesTest
+           ExtHostCompletionTest
            FontSizeChangeTest
            InputIgnoreTest
+           LanguageCssTest
            QuickOpenEventuallyCompletesTest
            SearchShowClearHighlightsTest
            RegressionCommandLineNoCompletionTest
@@ -19,7 +24,9 @@
            AddRemoveSplitTest
            TypingBatchedTest
            TypingUnbatchedTest
+           VimlConfigurationTest
            ZenModeSingleFileModeTest
+           ZenModeSplitTest
     )
     (libraries
         libvim
@@ -39,8 +46,13 @@
         ClipboardYankTest.exe
         CopyActiveFilepathToClipboardTest.exe
         EchoNotificationTest.exe
+        EditorFontFromPathTest.exe
+        EditorFontValidTest.exe
+        ExtHostBufferUpdatesTest.exe
+        ExtHostCompletionTest.exe
         FontSizeChangeTest.exe
         InputIgnoreTest.exe
+        LanguageCssTest.exe
         QuickOpenEventuallyCompletesTest.exe
         RegressionCommandLineNoCompletionTest.exe
         RegressionFileModifiedIndicationTest.exe
@@ -51,5 +63,7 @@
         TickTest.exe
         TypingBatchedTest.exe
         TypingUnbatchedTest.exe
+        VimlConfigurationTest.exe
         ZenModeSingleFileModeTest.exe
+        ZenModeSplitTest.exe
         ))
